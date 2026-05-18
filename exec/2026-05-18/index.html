@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>フクシマ建材 社内通信 No.08 — 経営支援 2026-05-18 財務研修</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink-dark: #1F1B16;
+    --ink-dark-soft: #3A322A;
+    --terracotta: #C46330;
+    --terracotta-soft: #D89A6C;
+    --paper: #FAF6EE;
+    --paper-soft: #FDFAF2;
+    --ink: #2A2520;
+    --ink-soft: #5C544C;
+    --line: #E5DCC8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead {
+    background: var(--ink-dark);
+    color: #fff;
+    padding: 48px 0 56px;
+    border-bottom: 4px solid var(--terracotta);
+    position: relative;
+  }
+  .masthead::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--terracotta) 0%, var(--terracotta-soft) 50%, var(--terracotta) 100%);
+  }
+  .masthead-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 18px; margin-bottom: 28px;
+    font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+    font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--terracotta-soft);
+  }
+  .masthead h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .masthead .issue {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; letter-spacing: 0.3em;
+    color: var(--terracotta-soft);
+    margin-bottom: 8px;
+  }
+  .masthead .subtitle {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.15rem; font-weight: 500;
+    color: rgba(255,255,255,0.92);
+    border-left: 3px solid var(--terracotta); padding-left: 14px;
+    margin-top: 18px;
+  }
+  .meta {
+    margin-top: 28px;
+    display: flex; flex-wrap: wrap; gap: 14px 28px;
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .meta .icon { color: var(--terracotta-soft); }
+  .tags { margin-top: 14px; }
+  .tag {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem; letter-spacing: 0.15em;
+    background: rgba(196,99,48,0.15);
+    color: var(--terracotta-soft);
+    border: 1px solid var(--terracotta-soft);
+    padding: 3px 10px;
+    margin-right: 6px;
+    border-radius: 2px;
+  }
+
+  article { padding: 56px 0 80px; }
+  .lead {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.18rem; font-weight: 500;
+    border-left: 4px solid var(--terracotta);
+    padding: 4px 0 4px 20px;
+    margin-bottom: 40px;
+    color: var(--ink-dark);
+  }
+  h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 56px 0 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink-dark);
+    position: relative;
+  }
+  h2::before {
+    content: ''; position: absolute; bottom: -2px; left: 0;
+    width: 60px; height: 2px; background: var(--terracotta);
+  }
+  h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 36px 0 14px;
+    padding-left: 14px;
+    border-left: 4px solid var(--terracotta);
+  }
+  h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.05rem; font-weight: 700;
+    color: var(--ink-dark-soft);
+    margin: 28px 0 10px;
+    padding-left: 12px;
+    border-left: 2px solid var(--terracotta-soft);
+  }
+  p { margin-bottom: 18px; }
+  p strong { color: var(--ink-dark); font-weight: 700; background: linear-gradient(transparent 60%, rgba(196,99,48,0.25) 60%); padding: 0 2px; }
+  ol, ul { margin: 0 0 24px 28px; }
+  li { margin-bottom: 8px; }
+
+  blockquote {
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: #fff;
+    border-left: 5px solid var(--terracotta);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.06);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.08rem; line-height: 1.85;
+    color: var(--ink-dark);
+    position: relative;
+  }
+  blockquote::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 700;
+    position: absolute; top: -14px; left: 14px;
+    color: var(--terracotta-soft); line-height: 1;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.88rem; color: var(--ink-soft);
+    font-style: normal; letter-spacing: 0.05em;
+  }
+  blockquote cite::before { content: '— '; color: var(--terracotta); }
+
+  .table-wrap {
+    margin: 24px 0;
+    background: #fff; border: 1px solid var(--line);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.04);
+    overflow-x: auto;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  th { background: var(--ink-dark); color: #fff; font-weight: 500; font-family: 'Noto Serif JP', serif; letter-spacing: 0.05em; }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { font-weight: 500; color: var(--ink-dark); }
+  tr:nth-child(even) td { background: var(--paper-soft); }
+
+  figure.inline {
+    margin: 28px 0;
+    background: #fff;
+    border: 1px solid var(--line);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.04);
+    padding: 18px;
+  }
+  figure.inline img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  figure.inline figcaption {
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    border-left: 3px solid var(--terracotta-soft);
+    padding-left: 12px;
+    line-height: 1.7;
+  }
+
+  footer {
+    background: var(--ink-dark); color: rgba(255,255,255,0.85);
+    padding: 40px 0 32px; margin-top: 60px;
+    border-top: 4px solid var(--terracotta);
+  }
+  footer .container { font-size: 0.88rem; line-height: 1.8; }
+  footer .colophon { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.2em; font-size: 0.78rem; color: var(--terracotta-soft); margin-bottom: 14px; text-transform: uppercase; }
+  footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 18px 0; }
+  footer .source { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+  .divider {
+    text-align: center;
+    margin: 48px 0;
+    color: var(--terracotta);
+    letter-spacing: 0.5em;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .divider::before, .divider::after {
+    content: ''; display: inline-block; width: 80px; height: 1px;
+    background: var(--terracotta); vertical-align: middle; margin: 0 14px;
+  }
+
+  .note {
+    margin: 32px 0; padding: 16px 22px;
+    background: var(--paper-soft); border: 1px dashed var(--terracotta-soft);
+    font-size: 0.92rem; color: var(--ink-soft);
+    border-radius: 2px;
+  }
+
+  .backlink { margin-top: 24px; }
+  .backlink a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem; letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.4);
+  }
+  .backlink a:hover { color: var(--terracotta-soft); border-bottom-color: var(--terracotta-soft); }
+
+  .toc {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--terracotta);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.04);
+    padding: 20px 24px;
+    margin: 0 0 40px;
+  }
+  .toc-title {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--ink-dark);
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+  }
+  .toc-title::before {
+    content: 'CONTENTS';
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--terracotta);
+    margin-bottom: 4px;
+  }
+  .toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc-counter; }
+  .toc ol li {
+    counter-increment: toc-counter;
+    margin-bottom: 6px;
+    padding-left: 26px;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .toc ol li::before {
+    content: counter(toc-counter, decimal-leading-zero);
+    position: absolute;
+    left: 0; top: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    color: var(--terracotta);
+    font-weight: 500;
+  }
+  .toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .toc a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta-soft); }
+  .toc a.toc-current {
+    color: var(--terracotta);
+    font-weight: 700;
+    border-bottom-color: var(--terracotta);
+  }
+
+  .series-related { margin: 56px 0 32px; padding: 28px 0 0; border-top: 2px solid var(--ink-dark); position: relative; }
+  .series-related::before { content: ''; position: absolute; top: -2px; left: 0; width: 60px; height: 2px; background: var(--terracotta); }
+  .series-related h2 { border: none; padding: 0; margin: 0 0 22px; }
+  .series-related h2::before { display: none; }
+  .series-related .label { font-family: 'Cormorant Garamond', serif; font-size: 0.78rem; letter-spacing: 0.3em; color: var(--terracotta); text-transform: uppercase; margin-bottom: 4px; display: block; }
+  .series-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+  .series-card { background: #fff; border: 1px solid var(--line); box-shadow: 0 2px 8px rgba(31,27,22,0.04); transition: transform 0.15s, box-shadow 0.15s; }
+  .series-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(31,27,22,0.08); }
+  .series-card a { display: block; padding: 18px 22px; color: inherit; text-decoration: none; }
+  .series-card .badge { display: inline-block; font-family: 'Cormorant Garamond', serif; font-size: 0.72rem; letter-spacing: 0.15em; background: rgba(196,99,48,0.12); color: var(--terracotta); border: 1px solid var(--terracotta-soft); padding: 2px 8px; margin-right: 8px; border-radius: 2px; text-transform: uppercase; }
+  .series-card .date { font-family: 'Cormorant Garamond', serif; font-size: 0.82rem; letter-spacing: 0.1em; color: var(--ink-soft); }
+  .series-card h3 { font-family: 'Noto Serif JP', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink-dark); margin: 8px 0 4px; border: none; padding: 0; line-height: 1.5; }
+  .series-card p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 1.7rem; }
+    .masthead-top { flex-direction: column; gap: 8px; align-items: flex-start; }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1.05rem; }
+    article { padding: 40px 0 60px; }
+    .toc { padding: 16px 18px; }
+    .series-card a { padding: 14px 18px; }
+    figure.inline { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-top">
+      <span>FKENZAI &middot; STAFF NOTES</span>
+      <span>No. 08 / May 18, 2026</span>
+    </div>
+    <div class="issue">ISSUE 08 &mdash; EXEC &middot; 財務研修</div>
+    <h1>経営支援 No.08 — 財務研修：BS／PLから変動損益計算書へ</h1>
+    <p class="subtitle">5月18日の財務研修。財務3表の役割と、製造業・建設業特有の決算書構造、<br>そして経営計画の精度を上げる「変動損益計算書」の必要性まで。</p>
+    <div class="meta">
+      <span><span class="icon">📅</span> 2026年5月18日（月） 13:20〜14:30 頃</span>
+      <span><span class="icon">📍</span> オンライン（Meet）</span>
+      <span><span class="icon">👥</span> 福嶋智和 ＋ 受講メンバー 2名 ＋ 経営支援パートナー</span>
+    </div>
+    <div class="tags">
+      <span class="tag">財務研修</span>
+      <span class="tag">BS／PL</span>
+      <span class="tag">変動損益計算書</span>
+      <span class="tag">トトロの図</span>
+      <span class="tag">MG研修</span>
+    </div>
+    <div class="backlink"><a href="../../">&larr; 一覧へ戻る</a></div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="lead">2026年5月18日の午後、<strong>財務研修の第1回</strong> が行われた。テーマは <strong>「経営者・管理者が、自分の言葉で数字を語れるようになる」</strong> こと。<br>BSとPLの基本構造、製造業・建設業特有の人件費の入り方、減価償却の考え方を順に確認し、最後に <strong>変動損益計算書の導入</strong> を決定した。聞いて終わりではなく、次回までに <strong>受講者が他の社員へ説明できる</strong> 状態を目指す研修設計。</p>
+
+    <nav class="toc" id="toc" aria-label="目次">
+      <div class="toc-title">目次</div>
+      <ol id="toc-list"></ol>
+    </nav>
+
+    <h3 style="margin-top: 0;">本日の流れ</h3>
+    <p>13:20開始、約70分の研修。経営支援パートナーが講師、受講側は福嶋智和とマネジメント層2名。MeetはGeminiで自動文字起こし・要約まで生成され、本記事はそのメモを下敷きにAIで再構成したもの。次回（木曜15時から）は、受講者が今日の内容を <strong>振り返って5〜10分で発表する</strong> 形式で進む。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>1. なぜ「人に教える」が一番効くのか</h2>
+
+    <p>研修の冒頭は学習設計の話から始まった。講義を聞くだけでは <strong>3日後にほぼゼロ</strong> に戻る。定着のためには、読書・準備・ディスカッション・ワークショップ・自ら体験、そして <strong>他者への教示</strong> という順で効果が上がる。最も学びが深くなるのは「教える」段階。</p>
+
+    <blockquote>
+      聞いたこと、勉強したことを、そのまま人に伝える。<br>
+      伝えるためには、聞いたことを理解していないと伝えられない。<br>
+      だから「教える」が一番きく。
+      <cite>研修冒頭の方針</cite>
+    </blockquote>
+
+    <p>この方針を受けて、今後は <strong>受講メンバーが全社会議の場で数字について社員に伝える機会</strong> を作る方向で動く。今日の内容も、次回はメンバー自身が振り返って発表する。</p>
+
+    <h2>2. 数値学習のゴール — 「トトロの図」を描けること</h2>
+
+    <p>経営数値を学ぶ目的は、損益構造を理解して <strong>「トトロの図」</strong> ──PQ・VQ・MQ・F・利益の関係図──を自分の手で描けるようになることにある。現状の数字と、3年後の目標数字、その両方をこの図の上に置けることが、経営計画策定の出発点。</p>
+
+    <p>その手前で押さえておくべき土台が、財務3表（BS・PL・CF）の役割と、特に <strong>BSとPLの基本構造</strong> の理解になる。</p>
+
+    <h2>3. 財務3表の役割 — BS・PL・CFの位置関係</h2>
+
+    <p>財務3表は、それぞれ会社の違う断面を切り取って見せる。</p>
+
+    <figure class="inline">
+      <img src="photos/zaimu08_01-sanpyou.png" alt="財務3表（PL・CF・BS）の関係図">
+      <figcaption>財務3表の関係図。期首から期末までの1年間で「いくら稼いだか」がPL、「お金がどれだけ増えたか」がCF、期末時点で「どのくらい財産を持っているか」がBS。3つは別々のものではなく、同じ会社の同じ期間を別の角度から見たもの。</figcaption>
+    </figure>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>表</th><th>何を表すか</th><th>同社での優先度</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>貸借対照表（BS）</td><td>決算日時点での会社の財産状態（土台）</td><td>高い</td></tr>
+          <tr><td>損益計算書（PL）</td><td>1年間の成績表（売上・費用・利益）</td><td>高い</td></tr>
+          <tr><td>キャッシュフロー計算書（CF）</td><td>1年間でお金がどう動いたか</td><td>低め（資金繰りに困っていない現状では）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>CFが今は優先度低めなのは、自己資本を積み上げてきた結果として <strong>資金繰りに困っていない</strong> 状態だから。BS（土台）が安定しているからこそ、CFを毎月睨む必要が薄くなっている、という構造。</p>
+
+    <h2>4. 貸借対照表（BS） — 調達と運用がバランスする</h2>
+
+    <p>BSは「決算日時点で会社が何を持っているか」を切り取ったもの。左右に分けて見るのが基本。</p>
+
+    <figure class="inline">
+      <img src="photos/zaimu08_03-bs-balance.png" alt="貸借対照表の構造（資産と負債・純資産）">
+      <figcaption>BSの左側は「何に使っているか」（流動資産＋固定資産）、右側は「どのように調達したか」（負債＋純資産）。負債は他人（他社）の金、純資産は自分（自社）の金。左右の合計額は必ず一致する（バランスする）。</figcaption>
+    </figure>
+
+    <ul>
+      <li><strong>左側（資産の部）</strong>：調達した資金が、いま何の形になっているか。現金・銀行預金・在庫・建物・車両・ソフトウェアなど</li>
+      <li><strong>右側（負債・純資産の部）</strong>：その資金をどこから引っ張ってきたか。借入金は「他人資本」、資本金や利益剰余金は「自己資本」</li>
+      <li>調達した資金は必ず何かの資産に姿を変えるので、<strong>左右は必ず一致（バランス）する</strong></li>
+    </ul>
+
+    <figure class="inline">
+      <img src="photos/zaimu08_02-bs-position.png" alt="BSにおけるPL・CFとの位置関係">
+      <figcaption>同じBSをPL・CFとの関係で見ると、上の段にCFとPL、土台にBSという階層が見える。PL（1年間の利益）は最終的にBSの純資産（うち利益剰余金）に積み上がっていく。</figcaption>
+    </figure>
+
+    <h2>5. 損益計算書（PL） — 売上から純利益までの流れ</h2>
+
+    <p>PLは1年間の損益を、上から順に引き算で並べた表。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>計算式</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>売上総利益（粗利益）</td><td>売上 − 売上原価</td></tr>
+          <tr><td>営業利益</td><td>売上総利益 − 販売費及び一般管理費</td></tr>
+          <tr><td>経常利益</td><td>営業利益 ± 営業外損益</td></tr>
+          <tr><td>税引前当期純利益</td><td>経常利益 ± 特別損益</td></tr>
+          <tr><td>当期純利益</td><td>税引前 − 法人税等</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>同社では <strong>営業利益と経常利益をほぼ同等</strong> とみなして判断する方針。営業外損益が大きく振れない事業構造のため、現場の判断はまず営業利益を見て動かす。</p>
+
+    <h2>6. 製造業・建設業の決算書 — 人件費は販管費ではなく原価へ</h2>
+
+    <p>ここが今日の研修で最も「ふつうの教科書と違う」部分だった。</p>
+
+    <figure class="inline">
+      <img src="photos/zaimu08_04-pl-jinkenhi.png" alt="製造業・建設業における人件費の位置">
+      <figcaption>左は損益計算書、中央は販管費の内訳、右は製造原価の内訳。建設業・製造業では、現場社員の給与（人件費）は販管費ではなく <strong>製造原価（または工事原価）</strong> に入る。一般的なサービス業のPLとは見え方が違うので、経営判断ではここを意識して読み替える必要がある。</figcaption>
+    </figure>
+
+    <p>税務上の決算書はあくまで <strong>納税のための数字</strong> として作られている。経営判断のためには、人件費を適切に切り分けて、後述の <strong>変動損益計算書</strong> に組み直して見る必要がある。</p>
+
+    <h2>7. 減価償却 — 設備投資を耐用年数で分割する</h2>
+
+    <p>車両や設備に投資した費用を、購入年に全額計上するのではなく、<strong>法律で定められた耐用年数</strong> にわたって分割して経費化していくのが減価償却。BSの固定資産は、年が経つにつれて少しずつ減少していき、その減った分がPLの減価償却費として現れる。</p>
+
+    <p>この仕組みを押さえておくと、「PLに大きな経費が乗っていないのに現金が減っている」とか、その逆の状況を、感覚ではなく構造で説明できるようになる。</p>
+
+    <h2>8. 自己資本の蓄積 — 経営の安定性をどう作るか</h2>
+
+    <p>経営の安定性を高めるには、<strong>他人資本（借入金）を減らし、自己資本を増やす</strong> ことが王道。自己資本を増やす方法は、突き詰めると2つしかない。</p>
+
+    <ol>
+      <li><strong>資本金の追加投入</strong>（株主からの増資）</li>
+      <li><strong>当期純利益の蓄積</strong>（毎年の利益を内部留保として積み上げる）</li>
+    </ol>
+
+    <p>同社はこれまで、後者の積み上げで純資産を増やしてきた。決算賞与の支給額を決める際も、確定前の <strong>営業利益などの数値をベースに配分率を考慮</strong> して決める方針が共有された。現状は半期ごとの実績に基づき、夏の賞与などへ反映する形で運用されている。</p>
+
+    <h2>9. 変動損益計算書の導入 — なぜ通常のPLでは予測できないか</h2>
+
+    <p>研修の後半、最も重要な決定がここで出た。</p>
+
+    <p>従来のPLは、<strong>変動費（売上に比例して増減する費用）と固定費（売上にかかわらず発生する費用）が混在</strong> している。さらに前述のとおり、製造業・建設業では人件費が原価側に入り込んでいる。この状態では、売上が増えたときに利益がどれだけ増えるのか、損益分岐点がどこにあるのか、を正確に読むことができない。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>区分</th><th>定義</th><th>具体例</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>変動費</td><td>売上に比例して発生する費用</td><td><strong>仕入れ／材料／外注費</strong> の3つに限定</td></tr>
+          <tr><td>固定費</td><td>売上の有無にかかわらず発生する費用</td><td>給与・家賃・広告宣伝費・減価償却費 など</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <blockquote>
+      変動費は「仕入れ・材料・外注費」の3つだけ。<br>
+      給与は売上が止まっても払うものだから、製造原価に入っていても固定費として切り出して見る。
+      <cite>変動損益計算書の組み換え方針</cite>
+    </blockquote>
+
+    <p>こうして組み換えたPLが <strong>変動損益計算書</strong>。売上から変動費を引いた「限界利益（粗利）」と、そこから固定費（F）を引いた「経常利益」が一目で並ぶ。<strong>限界利益率（粗利率）</strong> を正確に把握できれば、損益分岐点と、目標利益を達成するために必要な売上が逆算できる。</p>
+
+    <p>同社では、これまでの経営支援セッションでも繰り返し出てきた経営の基本式──<strong>M（マージン＝粗利単価）× Q（クオンティティ＝物件数）− F（固定費）</strong>──の「F」を、変動損益計算書から正しく取り出せるようになることが、次の経営計画の土台になる。</p>
+
+    <h2>10. 本日の主要決定</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>確定内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>研修形式</td><td>「聞く」だけで終わらせず、<strong>次回は受講者が振り返りを5〜10分で発表</strong></td></tr>
+          <tr><td>数値の社内展開</td><td>全社会議の場で、受講メンバーが <strong>数値について社員に伝える機会</strong> を設ける</td></tr>
+          <tr><td>営業利益と経常利益の扱い</td><td>同社ではほぼ同等とみなし、まず <strong>営業利益</strong> をベースに判断</td></tr>
+          <tr><td>経営計画の数値ベース</td><td>税務上のPLではなく、<strong>変動損益計算書に組み換えた数値</strong> で計画を立てる</td></tr>
+          <tr><td>変動費の定義</td><td>仕入れ・材料・外注費の <strong>3つに限定</strong>。給与は固定費へ</td></tr>
+          <tr><td>限界利益率（粗利率）の把握</td><td>損益分岐点を割り出すため、自社の粗利率を <strong>正確に押さえる</strong></td></tr>
+          <tr><td>次回 社内財務勉強会（MG研修）</td><td><strong>木曜15時から1時間</strong> 程度の枠で実施</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>アクションアイテム</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>タスク</th><th>担当</th><th>期限</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>今日の研修内容を振り返り、次回5〜10分で発表できる形にまとめる</td><td>受講メンバー</td><td>次回研修まで</td></tr>
+          <tr><td>全社会議で数値について伝える機会を設計する</td><td>経営者・管理者</td><td>今後の全社会議</td></tr>
+          <tr><td>同社の決算書を「変動損益計算書」に組み換える</td><td>財務担当</td><td>次回経営計画策定までに</td></tr>
+          <tr><td>限界利益率（粗利率）を正確に算出して共有する</td><td>財務担当</td><td>随時</td></tr>
+          <tr><td>次回MG研修（木曜15時）に参加</td><td>関係メンバー</td><td>次回開催日</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>次の節目</h2>
+
+    <h3>次回 社内財務勉強会（MG研修）</h3>
+    <p><strong>木曜15時から1時間程度</strong>。今日の内容の振り返り発表が冒頭に入り、その後で次のテーマへ。受講者が「自分の言葉で説明できる」ところまで持っていくのが研修全体のゴール。</p>
+
+    <h3>次回 経営支援打ち合わせ</h3>
+    <p>同シリーズの本流は <strong>2026年7月22日（火）</strong> の経営計画書策定セッション。今日学んだ変動損益計算書の組み換えが、その日までに走っている前提で構えていく。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>編集後記</h2>
+
+    <p>今日の研修は、内容そのものよりも <strong>「研修の作り方」</strong> の話から入ったのが象徴的だった。聞いて終わる講義は3日でゼロに戻る、だから「教える側」に回す。受講メンバーが次回までに振り返って発表する、その先には全社会議で社員に伝えるところまで設計されている。研修のゴールが「受講者の理解」ではなく <strong>「組織の理解」</strong> に置かれている。</p>
+
+    <p>内容面で残ったのは、<strong>製造業・建設業の決算書は人件費が原価に入る</strong> という一点に集約される。サービス業向けに書かれた一般的な財務本を読んでも、自社のPLを正しく読み解けない理由がここにある。変動損益計算書への組み換えは、その特殊性を取り除いて、<strong>経営判断のための数字</strong> として読めるようにする作業。</p>
+
+    <p>そしてこの作業は、これまでの経営支援で繰り返し出てきた <strong>「MQF」の経営式</strong>（M＝粗利単価／Q＝物件数／F＝固定費）の「F」を、自社の実態に即した正しい値で取り出すための前準備でもある。今日の研修は単体で完結する話ではなく、<strong>7月22日の経営計画書策定セッション</strong> に向けた地ならしとして位置付けられている。</p>
+
+    <section class="series-related">
+      <h2><span class="label">Other Issues</span>このシリーズの他の号</h2>
+      <ul class="series-list">
+        <li class="series-card">
+          <a href="../../manazemi/2026-05-18/">
+            <span class="badge">No. 07 · Manazemi</span>
+            <span class="date">2026.05.18 MON</span>
+            <h3>マネゼミ第16期 第1講 登壇後 — 自知と健全な危機感</h3>
+            <p>登壇翌週の独白ベース振り返り。AIの向き合い方も本業直結へ切り替え。</p>
+          </a>
+        </li>
+        <li class="series-card">
+          <a href="../../exec/2026-05-13/">
+            <span class="badge">No. 06 · Exec</span>
+            <span class="date">2026.05.13 WED</span>
+            <h3>経営支援 — 上半期の確認と、下半期への切り替え</h3>
+            <p>1日2部構成の経営支援。数字を整え、組織を変え、集客の経路を切り替える3本柱。</p>
+          </a>
+        </li>
+        <li class="series-card">
+          <a href="../../manazemi/2026-04-17/">
+            <span class="badge">No. 05 · Manazemi</span>
+            <span class="date">2026.04.17 FRI</span>
+            <h3>マネゼミ第1講 構成会議 — 自己確立から人間関係へ</h3>
+            <p>松尾講師との打ち合わせで、第16期 第1講の骨格が固まった。</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="note">
+      ※ 本記事は、当日のMeet録画から自動生成された議事録Docs（「2026/05/18 13:20 JST に開始した会議 - Gemini によるメモ」）を素材に、AIによる構成・編集を経て社内通信用にまとめたものです。発言や数値は議事録の原意を保ったうえで読み物として整えています。誤字・事実誤認の可能性があります。お気づきの点があれば、発行元までご一報ください。
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <div class="colophon">Fkenzai &middot; Staff Notes &middot; Issue 08 &middot; Exec</div>
+    <p>フクシマ建材 社内通信 No.08（経営支援・財務研修号） / 発行：フクシマ建材株式会社 / 編集：AI秘書</p>
+    <hr>
+    <p class="source">本記事はフクシマ建材株式会社の社内・パートナー共有を主目的とした活動記録です。財務に関する基礎概念の整理が中心ですが、同社の経営判断方針が含まれます。外部SNS等への転載はご遠慮ください。</p>
+    <p class="source" style="margin-top: 8px;">本記事はAIによる議事録の要約をベースに編集しているため、誤字や事実誤認が含まれる可能性があります。お気づきの点があれば、ぜひ発行元までご指摘ください。修正・削除のご要望も同様に承ります。</p>
+    <p class="source" style="margin-top: 8px;">出典：当日のMeet録画議事録（社内記録） ／ 検索エンジン除外設定（noindex, nofollow）</p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var tocList = document.getElementById('toc-list');
+    var headings = document.querySelectorAll('article h2');
+    if (!tocList || headings.length === 0) {
+      var toc = document.getElementById('toc');
+      if (toc) toc.style.display = 'none';
+      return;
+    }
+    var items = [];
+    headings.forEach(function(h, idx) {
+      if (h.closest('.series-related')) return;
+      if (!h.id) { h.id = 'sec-' + (idx + 1); }
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent.replace(/^\d+\.\s*/, '');
+      li.appendChild(a);
+      tocList.appendChild(li);
+      items.push({ id: h.id, el: h, link: a });
+    });
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          var match = items.find(function(it) { return it.id === entry.target.id; });
+          if (!match) return;
+          if (entry.isIntersecting) {
+            items.forEach(function(it) { it.link.classList.remove('toc-current'); });
+            match.link.classList.add('toc-current');
+          }
+        });
+      }, { rootMargin: '0px 0px -70% 0px', threshold: 0 });
+      items.forEach(function(it) { observer.observe(it.el); });
+    }
+  })();
+</script>
+
+</body>
+</html>
