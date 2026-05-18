@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>フクシマ建材 社内通信 No.05 — マネゼミ第1講 構成会議 2026-04-17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink-dark: #1F1B16;
+    --ink-dark-soft: #3A322A;
+    --terracotta: #C46330;
+    --terracotta-soft: #D89A6C;
+    --paper: #FAF6EE;
+    --paper-soft: #FDFAF2;
+    --ink: #2A2520;
+    --ink-soft: #5C544C;
+    --line: #E5DCC8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead {
+    background: var(--ink-dark);
+    color: #fff;
+    padding: 48px 0 56px;
+    border-bottom: 4px solid var(--terracotta);
+    position: relative;
+  }
+  .masthead::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--terracotta) 0%, var(--terracotta-soft) 50%, var(--terracotta) 100%);
+  }
+  .masthead-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 18px; margin-bottom: 28px;
+    font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+    font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--terracotta-soft);
+  }
+  .masthead h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .masthead .issue {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; letter-spacing: 0.3em;
+    color: var(--terracotta-soft);
+    margin-bottom: 8px;
+  }
+  .masthead .subtitle {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.15rem; font-weight: 500;
+    color: rgba(255,255,255,0.92);
+    border-left: 3px solid var(--terracotta); padding-left: 14px;
+    margin-top: 18px;
+  }
+  .meta {
+    margin-top: 28px;
+    display: flex; flex-wrap: wrap; gap: 14px 28px;
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .meta .icon { color: var(--terracotta-soft); }
+  .tags { margin-top: 14px; }
+  .tag {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem; letter-spacing: 0.15em;
+    background: rgba(196,99,48,0.15);
+    color: var(--terracotta-soft);
+    border: 1px solid var(--terracotta-soft);
+    padding: 3px 10px;
+    margin-right: 6px;
+    border-radius: 2px;
+  }
+
+  article { padding: 56px 0 80px; }
+  .lead {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.18rem; font-weight: 500;
+    border-left: 4px solid var(--terracotta);
+    padding: 4px 0 4px 20px;
+    margin-bottom: 40px;
+    color: var(--ink-dark);
+  }
+  h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 56px 0 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink-dark);
+    position: relative;
+  }
+  h2::before {
+    content: ''; position: absolute; bottom: -2px; left: 0;
+    width: 60px; height: 2px; background: var(--terracotta);
+  }
+  h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 36px 0 14px;
+    padding-left: 14px;
+    border-left: 4px solid var(--terracotta);
+  }
+  h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.05rem; font-weight: 700;
+    color: var(--ink-dark-soft);
+    margin: 28px 0 10px;
+    padding-left: 12px;
+    border-left: 2px solid var(--terracotta-soft);
+  }
+  p { margin-bottom: 18px; }
+  p strong { color: var(--ink-dark); font-weight: 700; background: linear-gradient(transparent 60%, rgba(196,99,48,0.25) 60%); padding: 0 2px; }
+  ol, ul { margin: 0 0 24px 28px; }
+  li { margin-bottom: 8px; }
+
+  blockquote {
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: #fff;
+    border-left: 5px solid var(--terracotta);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.06);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.08rem; line-height: 1.85;
+    color: var(--ink-dark);
+    position: relative;
+  }
+  blockquote::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 700;
+    position: absolute; top: -14px; left: 14px;
+    color: var(--terracotta-soft); line-height: 1;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.88rem; color: var(--ink-soft);
+    font-style: normal; letter-spacing: 0.05em;
+  }
+  blockquote cite::before { content: '— '; color: var(--terracotta); }
+
+  .table-wrap {
+    margin: 24px 0;
+    background: #fff; border: 1px solid var(--line);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.04);
+    overflow-x: auto;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  th { background: var(--ink-dark); color: #fff; font-weight: 500; font-family: 'Noto Serif JP', serif; letter-spacing: 0.05em; }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { font-weight: 500; color: var(--ink-dark); }
+  tr:nth-child(even) td { background: var(--paper-soft); }
+
+  footer {
+    background: var(--ink-dark); color: rgba(255,255,255,0.85);
+    padding: 40px 0 32px; margin-top: 60px;
+    border-top: 4px solid var(--terracotta);
+  }
+  footer .container { font-size: 0.88rem; line-height: 1.8; }
+  footer .colophon { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.2em; font-size: 0.78rem; color: var(--terracotta-soft); margin-bottom: 14px; text-transform: uppercase; }
+  footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 18px 0; }
+  footer .source { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+  .divider {
+    text-align: center;
+    margin: 48px 0;
+    color: var(--terracotta);
+    letter-spacing: 0.5em;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .divider::before, .divider::after {
+    content: ''; display: inline-block; width: 80px; height: 1px;
+    background: var(--terracotta); vertical-align: middle; margin: 0 14px;
+  }
+
+  .note {
+    margin: 32px 0; padding: 16px 22px;
+    background: var(--paper-soft); border: 1px dashed var(--terracotta-soft);
+    font-size: 0.92rem; color: var(--ink-soft);
+    border-radius: 2px;
+  }
+
+  .backlink { margin-top: 24px; }
+  .backlink a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem; letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.4);
+  }
+  .backlink a:hover { color: var(--terracotta-soft); border-bottom-color: var(--terracotta-soft); }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 1.7rem; }
+    .masthead-top { flex-direction: column; gap: 8px; align-items: flex-start; }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1.05rem; }
+    article { padding: 40px 0 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-top">
+      <span>FKENZAI &middot; STAFF NOTES</span>
+      <span>No. 05 / Apr 17, 2026</span>
+    </div>
+    <div class="issue">ISSUE 05 &mdash; MANAZEMI</div>
+    <h1>マネゼミ第1講 構成会議 No.05 — 自己確立から人間関係へ</h1>
+    <p class="subtitle">福嶋講師 × 松尾講師の二者打ち合わせ。<br>受講生自己紹介、ディベート前倒し、交流分析の伝え方、夢ビジョン — 第16期 第1講の骨格が固まった。</p>
+    <div class="meta">
+      <span><span class="icon">📅</span> 2026年4月17日（金） 13:27〜</span>
+      <span><span class="icon">📍</span> オンライン打ち合わせ</span>
+      <span><span class="icon">👥</span> 福嶋智和 ＋ 松尾講師</span>
+    </div>
+    <div class="tags">
+      <span class="tag">マネゼミ</span>
+      <span class="tag">第16期</span>
+      <span class="tag">第1講リハ</span>
+      <span class="tag">講師打合せ</span>
+    </div>
+    <div class="backlink"><a href="../../">&larr; 一覧へ戻る</a></div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="lead">マネジメントリーダーゼミ第16期 第1講の構成を、第1講担当の <strong>福嶋講師</strong> と、マネゼミの軸である <strong>松尾講師</strong> の二者で詰める打ち合わせ。論点は4つ — <strong>受講生自己紹介の入口設計</strong>／<strong>ディベートを第1講から入れるか</strong>／<strong>交流分析（TA）の伝え方</strong>／<strong>夢・ビジョンの位置づけ</strong>。5時間の枠の中で、受講生が自ら気づきにたどり着く土台をどう作るか、骨格が固まった。</p>
+
+    <h3 style="margin-top: 0;">本日の参加者</h3>
+    <p>福嶋智和（フクシマ建材代表／マネゼミ第16期 第1講担当）／ 松尾講師（マネゼミ会長） — 二者打ち合わせ。次回の <strong>講師会は2026年4月27日（月）13:30〜、福嶋自宅</strong> にて。本日の整理を持ち寄り、講師陣全体で詰める段取り。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>1. 講義冒頭の組み立て — 自己紹介を主軸に</h2>
+
+    <h3>講師陣の挨拶はOB会代表のみ</h3>
+
+    <p>講師陣の自己紹介はオリエンテーションで完了している前提で、<strong>第1講の冒頭は受講生主体</strong> に振り切る方針。講師側の挨拶は <strong>OB会代表（指針の会の代表）</strong> のみとし、その後は福嶋講師がナビゲート役で全体を回す。</p>
+
+    <h3>受講生自己紹介＋参加目的を30分で</h3>
+
+    <p>受講生 <strong>12名 × 各2分</strong> で自己紹介と参加目的の共有。タイムキーパーは受講生から1人選出する。所要時間は約30分。</p>
+
+    <blockquote>
+      自己紹介の中で、自慢を1つ入れさせるのがいい。<br>
+      ハードルが高ければ、グループ内での自慢タイムにしてもいい。<br>
+      その方が時間も取れる。
+      <cite>松尾講師</cite>
+    </blockquote>
+
+    <p>第15期で行った「個人の自慢タイム」は、グループ内の自己PR形式に切り替えることで時間効率も上がる、という整理。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>2. ディベートを第1講から導入する</h2>
+
+    <p>当初は第2講以降のテーマだったディベートを、<strong>第1講から導入する方針</strong> に変更。位置づけは <strong>「自己確立と自己解放のトレーニング」</strong>。</p>
+
+    <blockquote>
+      みんな何かを隠したい自分を持っている。<br>
+      それを解放していくのが、この講座全体の流れ。<br>
+      ディベートは、自己確立しないと勝てない。だから第1講から入れる意味がある。
+      <cite>松尾講師</cite>
+    </blockquote>
+
+    <p>第1〜4講まで毎回ディベートを実施する方針で進める。基本姿勢（20分）→ ディベート（30分）→ 交流分析ワーク、という流れを叩き台として組む。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>3. 交流分析（TA）— 自分OK・他人OKをどう伝えるか</h2>
+
+    <h3>4象限の意味と、まず「自分OK」から</h3>
+
+    <p>TAOKチェックリストで自分の傾向を測ったうえで、<strong>4象限</strong>（自分OK・他人OK／自分OK・他人NG／自分NG・他人OK／自分NG・他人NG）の意味を伝える。理想は「自分OK・他人OK」だが、いきなりここに飛ぼうとすると無理が出るため、<strong>まず「自分OK」を確立する</strong> 順序で導入する。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>自己認識のタイプ</th><th>傾向</th><th>第1講での伝え方</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>自分NG・他人OK</td><td>相手を立てすぎて自分が卑屈になる</td><td>「<strong>まずは自分OKから</strong>」と促す</td></tr>
+          <tr><td>自分OK・他人NG</td><td>自分を好きすぎて傲慢に振れる</td><td>「他人OKも意識しよう」と促す</td></tr>
+          <tr><td>自分NG・他人NG</td><td>関係そのものが成立しづらい</td><td>「自分OKに気づくことが先」</td></tr>
+          <tr><td><strong>自分OK・他人OK</strong></td><td><strong>健全な人間関係の前提</strong></td><td>「理想形。ここを目指す」</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>福嶋講師自身のTAスコア変化を開示する</h3>
+
+    <p>福嶋講師の4期受講当時（2012年）と現在のスコア変化を、講義中に <strong>具体的な数字で開示</strong> する。「マネゼミで本当に人は変わるのか」という受講生最大の疑問に、講師自身の数値で答える構成は引き続き効かせる。</p>
+
+    <div class="note">
+      <strong>福嶋講師の宿題</strong>：交流分析（TA）の資料を再読し、講義内容への反映を進める。本日の議論で「TA説明は誰かに任せてもいい」案も出たが、結論は「<strong>誰かがきちっと喋れるようになった方がいい</strong>」（松尾講師）。第16期は福嶋が自分で説明する。
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>4. 夢・ビジョン — 持つ者と持たぬ者で「今」が違う</h2>
+
+    <p>本日の議論で <strong>「これは絶対入れたい」</strong> と福嶋講師が明言したのが、夢・ビジョンのテーマ。第1講の課題図書が『夢をかなえるゾウ』であることとも接続させる。</p>
+
+    <blockquote>
+      夢を持っている者と持っていない者は、「今」が違う。<br>
+      今に対する集中力が変わる。今の密度が変わる。<br>
+      その日々の積み重ねが、将来の差になる。
+      <cite>松尾講師</cite>
+    </blockquote>
+
+    <h3>「成長」と「成功」の違いで結ぶ</h3>
+
+    <p>「夢」と言うと「私には特に夢はない」となる受講生もいる前提で、<strong>「目指すのは成長」</strong> という入口に置き換える。成功は外からの評価で揺れるが、成長は自分の中の手応えとして掴める。</p>
+
+    <p>「夢を導き出す30の質問」シートは <strong>第1講では使わず、第2講までの宿題</strong> として配布する方向。第2講で10分グループシェア → 10分発表、という時間配分で活用する。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>5. フォロワーシップの育成 — リーダーシップの両輪</h2>
+
+    <p>松尾講師が第15期の途中から強く意識し始めた概念。<strong>「リーダーシップの基盤としてのフォロワーシップ」</strong>。本日の議論で福嶋講師にも問題意識が共有された。</p>
+
+    <blockquote>
+      自分はずっとフォロワーの立場を貫いてきて、結果としてリーダーとして成長してきた部分があった。<br>
+      ただフォローしていただけのつもりだったが、それが基盤になっていたと、AIに整理されて初めて気づいた。
+      <cite>松尾講師</cite>
+    </blockquote>
+
+    <p>福嶋講師は「正直、まだフォロワーの大事さがピンと来ていない」と率直に共有。第16期では福嶋が <strong>フォロワーシップ担当を引き受けて学ぶ</strong> 方向で検討する。リーダーシップの中にフォロワーシップが含まれる、という構造の理解を深める時間にする。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>6. 講義運営の流れ</h2>
+
+    <p>本日の議論で固まった第1講の流れ（叩き台）：</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>区分</th><th>所要</th><th>内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>OB会代表挨拶</td><td>短く</td><td>指針の会代表（吉田光臣会長想定）</td></tr>
+          <tr><td>受講生自己紹介・参加目的</td><td>30分</td><td>12名 × 各2分。タイムキーパーは受講生から選出</td></tr>
+          <tr><td>基本姿勢の講義</td><td>20分</td><td>福嶋講師がリード。リーダーとしての生き方</td></tr>
+          <tr><td>ディベート</td><td>30分</td><td>自己確立・自己解放のトレーニングとして導入</td></tr>
+          <tr><td>交流分析（TA）ワーク</td><td>50〜60分</td><td>説明10分 + 記入20分 + グループシェア・発表</td></tr>
+          <tr><td>夢・ビジョンの話</td><td>10分前後</td><td>講義の中に組み込む。30の質問は宿題化</td></tr>
+          <tr><td>受講生感想発表</td><td>—</td><td>1人ずつアウトプット</td></tr>
+          <tr><td>松尾講師による全体総括</td><td>10〜15分</td><td>感想発表の後に置く</td></tr>
+          <tr><td>OBからのエール</td><td>1分 × 人数</td><td>短くてもよい。「来ていた」事実が大事</td></tr>
+          <tr><td>第2講への案内</td><td>—</td><td>穴井・三田担当の流れを予告</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>本日の主要決定</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>確定内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>講師陣の挨拶</td><td><strong>OB会代表のみ</strong>。福嶋がメインナビゲーター</td></tr>
+          <tr><td>受講生自己紹介</td><td>12名 × 2分（30分）。<strong>自慢を1つ含める</strong>（グループ内でも可）</td></tr>
+          <tr><td>ディベート導入</td><td><strong>第1講から導入</strong>。第1〜4講まで毎回実施で検討</td></tr>
+          <tr><td>交流分析（TA）の伝え方</td><td><strong>「自分OK起点」</strong> で説明。福嶋が自身のスコア変化を開示</td></tr>
+          <tr><td>夢・ビジョン</td><td>本講に <strong>明示的に組み込む</strong>。30の質問は第2講までの宿題</td></tr>
+          <tr><td>「成長」と「成功」</td><td>目指すのは <strong>成長</strong>、として伝える</td></tr>
+          <tr><td>フォロワーシップ</td><td>福嶋が担当して学ぶ方向で <strong>継続検討</strong></td></tr>
+          <tr><td>松尾講師の総括</td><td>感想発表の <strong>後</strong> に10〜15分</td></tr>
+          <tr><td>感想文提出先</td><td>事務局一本化の方向で <strong>次回ルール確定</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>アクションアイテム（〜2026-04-27 講師会まで）</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>タスク</th><th>担当</th><th>期限</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>第1講プログラムの最終調整（自己紹介・ディベート・TA・夢ビジョン）</td><td>福嶋／松尾</td><td>2026-04-27</td></tr>
+          <tr><td>「夢を導き出す30の質問」の活用方法を詰める（宿題化・ワーク形式）</td><td>福嶋／松尾</td><td>2026-04-27</td></tr>
+          <tr><td>受講生からの感想文提出先の一本化ルール案</td><td>福嶋／松尾</td><td>2026-04-27</td></tr>
+          <tr><td>次回講師会の準備（会場手配・資料準備）</td><td>福嶋</td><td>2026-04-27</td></tr>
+          <tr><td>交流分析（TA）資料の再読と講義反映</td><td>福嶋</td><td>随時</td></tr>
+          <tr><td>フォロワーシップ学習と講義への導入可能性検討</td><td>福嶋</td><td>随時</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>次の節目</h2>
+
+    <h3>次回 講師会</h3>
+    <p><strong>2026年4月27日（月）13:30〜</strong>／会場：<strong>福嶋自宅</strong>（植木インター手前、泗水方面・下道30〜40分、高速利用なら熊本北IC → 約20分）／本日の整理を講師陣全体で詰める。</p>
+
+    <h3>第1講 本番</h3>
+    <p>2026年5月16日（土）（マネゼミ第16期 第1講）／担当：<strong>福嶋智和</strong>／全体総括：松尾講師</p>
+
+    <div class="divider">◆</div>
+
+    <h2>編集後記</h2>
+
+    <p>本日の打ち合わせで一番印象的だったのは、<strong>「夢を持つ者は今が違う」</strong> という松尾講師の整理が、講義の核として再確認されたこと。マネゼミの中心テーマは「自己確立」だが、その土台に「夢」がないとポジティブの方向に振れにくい、という構造が、改めて言葉になった。「成功ではなく成長」という入口の置き換えも、受講生に手応えを掴ませる実用的な視点として共有された。</p>
+
+    <p>もう一つ、<strong>フォロワーシップ</strong> の問題意識。松尾講師が「自分は意識せずフォロワーをやっていた」と気づいたのはAIに整理されて初めて、という告白は印象深い。福嶋講師の「正直まだピンと来ていない」という率直な共有とも合わせ、第16期で福嶋が担当して学ぶ方向で動き始める。リーダーシップの中にフォロワーシップが含まれる、という構造の理解を深める1年になりそうな兆し。</p>
+
+    <p>本日の組み立てを持って、<strong>4月27日（月）の講師会</strong> で全体に共有・調整に入る。第1講本番は5月16日（土）。あと1ヶ月で、骨格を肉づけしていく。</p>
+
+    <div class="note">
+      ※ 本記事は、当日の議事録（議事録_4月17日（13:27）松尾講師との打ち合わせ。16期1項_20260418）を素材に、AIによる構成・編集を経て作成しています。本文中の発言は、原意を保ったうえで読み物として整えています。誤字・事実誤認の可能性があります。お気づきの点があれば、発行元までご一報ください。
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <div class="colophon">Fkenzai &middot; Staff Notes &middot; Issue 05 &middot; Manazemi</div>
+    <p>フクシマ建材 社内通信 No.05（マネゼミ第1講 構成会議号） / 発行：フクシマ建材株式会社 / 編集：AI秘書</p>
+    <hr>
+    <p class="source">本記事はフクシマ建材株式会社の社内共有を主目的とした活動記録です。掲載内容にはマネゼミ運営に関わる講師の発言が含まれます。</p>
+    <p class="source" style="margin-top: 8px;">本記事はAIによる議事録の要約をベースに編集しているため、誤字や事実誤認が含まれる可能性があります。お気づきの点があれば、ぜひ発行元までご指摘ください。修正・削除のご要望も同様に承ります。</p>
+    <p class="source" style="margin-top: 8px;">出典：当日の議事録（社内記録） ／ 検索エンジン除外設定（noindex, nofollow）</p>
+  </div>
+</footer>
+
+</body>
+</html>
