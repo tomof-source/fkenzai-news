@@ -222,6 +222,32 @@
   }
   .backlink a:hover { color: var(--terracotta-soft); border-bottom-color: var(--terracotta-soft); }
 
+  /* TOC */
+  .toc { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--terracotta); box-shadow: 0 2px 10px rgba(31,27,22,0.04); padding: 20px 24px; margin: 0 0 40px; }
+  .toc-title { font-family: 'Noto Serif JP', serif; font-weight: 700; font-size: 1.05rem; color: var(--ink-dark); margin-bottom: 12px; letter-spacing: 0.05em; }
+  .toc-title::before { content: 'CONTENTS'; display: block; font-family: 'Cormorant Garamond', serif; font-size: 0.7rem; letter-spacing: 0.3em; color: var(--terracotta); margin-bottom: 4px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc-counter; }
+  .toc ol li { counter-increment: toc-counter; margin-bottom: 6px; padding-left: 26px; position: relative; font-size: 0.95rem; line-height: 1.5; }
+  .toc ol li::before { content: counter(toc-counter, decimal-leading-zero); position: absolute; left: 0; top: 0; font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: var(--terracotta); font-weight: 500; }
+  .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted transparent; transition: color 0.15s, border-color 0.15s; }
+  .toc a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta-soft); }
+  .toc a.toc-current { color: var(--terracotta); font-weight: 700; border-bottom-color: var(--terracotta); }
+
+  /* シリーズ関連リンク */
+  .series-related { margin: 56px 0 32px; padding: 28px 0 0; border-top: 2px solid var(--ink-dark); position: relative; }
+  .series-related::before { content: ''; position: absolute; top: -2px; left: 0; width: 60px; height: 2px; background: var(--terracotta); }
+  .series-related h2 { border: none; padding: 0; margin: 0 0 22px; }
+  .series-related h2::before { display: none; }
+  .series-related .label { font-family: 'Cormorant Garamond', serif; font-size: 0.78rem; letter-spacing: 0.3em; color: var(--terracotta); text-transform: uppercase; margin-bottom: 4px; display: block; }
+  .series-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+  .series-card { background: #fff; border: 1px solid var(--line); box-shadow: 0 2px 8px rgba(31,27,22,0.04); transition: transform 0.15s, box-shadow 0.15s; }
+  .series-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(31,27,22,0.08); }
+  .series-card a { display: block; padding: 18px 22px; color: inherit; text-decoration: none; }
+  .series-card .badge { display: inline-block; font-family: 'Cormorant Garamond', serif; font-size: 0.72rem; letter-spacing: 0.15em; background: rgba(196,99,48,0.12); color: var(--terracotta); border: 1px solid var(--terracotta-soft); padding: 2px 8px; margin-right: 8px; border-radius: 2px; text-transform: uppercase; }
+  .series-card .date { font-family: 'Cormorant Garamond', serif; font-size: 0.82rem; letter-spacing: 0.1em; color: var(--ink-soft); }
+  .series-card h3 { font-family: 'Noto Serif JP', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink-dark); margin: 8px 0 4px; border: none; padding: 0; line-height: 1.5; }
+  .series-card p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+
   /* Responsive */
   @media (max-width: 600px) {
     .masthead h1 { font-size: 1.7rem; }
@@ -229,6 +255,8 @@
     h2 { font-size: 1.3rem; }
     h3 { font-size: 1.05rem; }
     article { padding: 40px 0 60px; }
+    .toc { padding: 16px 18px; }
+    .series-card a { padding: 14px 18px; }
   }
 </style>
 </head>
@@ -262,6 +290,11 @@
   <div class="container">
 
     <p class="lead">年間受注 <strong>450件</strong> を出口に置いたとき、入口の <strong>年間問い合わせ600件（月50件）</strong> から逆算してファネルを点検する回。WEB／SNS経由の問い合わせ落ち込みを受けて、<strong>SNS内製化のロードマップ</strong>、<strong>テーマ別ショールーム相談会</strong>、<strong>OB顧客DM</strong> という3つの打ち手が、6月の次回打ち合わせまでに進める課題として整理された。</p>
+
+    <nav class="toc" id="toc" aria-label="目次">
+      <div class="toc-title">目次</div>
+      <ol id="toc-list"></ol>
+    </nav>
 
     <h3 style="margin-top: 0;">本日の参加者</h3>
     <p>フクシマ建材：福嶋智和／福嶋涼子／柳（担当スタッフ） ／ 源本マーケティング研究所：岡氏／竹中氏 — 計5名がオンラインで参加。次回は <strong>2026年6月4日（木）または5日（金）13:00〜</strong>。</p>
@@ -490,6 +523,28 @@
 
     <p>次回は6月初旬。それまでに3つの提出物（テーマ確定／メーカーSR検討／DM構成案）が積み上がる予定。1つの会議で大きな転換が決まった、というよりは、<strong>「ここから3ヶ月で実装する課題が見えた」</strong> という回だった。</p>
 
+    <section class="series-related">
+      <h2><span class="label">Other Issues</span>最近の社内通信</h2>
+      <ul class="series-list">
+        <li class="series-card">
+          <a href="../../exec/2026-05-13/">
+            <span class="badge">No. 06 · Exec</span>
+            <span class="date">2026.05.13 WED</span>
+            <h3>経営支援 — 上半期の確認と、下半期への切り替え</h3>
+            <p>1日2部構成。午前は業績・組織・権限、午後はダッシュボード・Web広告・DM・組織再構築。</p>
+          </a>
+        </li>
+        <li class="series-card">
+          <a href="../../manazemi/2026-04-17/">
+            <span class="badge">No. 05 · Manazemi</span>
+            <span class="date">2026.04.17 FRI</span>
+            <h3>マネゼミ第1講 構成会議 — 自己確立から人間関係へ</h3>
+            <p>松尾講師との打ち合わせで、第16期 第1講の骨格が固まった。</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
     <div class="note">
       ※ 本記事は、当日の議事録（議事録_広報マーケティング定例ミーティング_20260412.md）を素材に、AIによる構成・編集を経て作成しています。誤字・事実誤認の可能性があります。お気づきの点があれば、発行元までご一報ください。
     </div>
@@ -507,6 +562,43 @@
     <p class="source" style="margin-top: 8px;">出典：当日の議事録（社内記録） ／ 検索エンジン除外設定（noindex, nofollow）</p>
   </div>
 </footer>
+
+<script>
+  (function() {
+    var tocList = document.getElementById('toc-list');
+    var headings = document.querySelectorAll('article h2');
+    if (!tocList || headings.length === 0) {
+      var toc = document.getElementById('toc');
+      if (toc) toc.style.display = 'none';
+      return;
+    }
+    var items = [];
+    headings.forEach(function(h, idx) {
+      if (h.closest('.series-related')) return;
+      if (!h.id) { h.id = 'sec-' + (idx + 1); }
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent.replace(/^\d+\.\s*/, '');
+      li.appendChild(a);
+      tocList.appendChild(li);
+      items.push({ id: h.id, el: h, link: a });
+    });
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          var match = items.find(function(it) { return it.id === entry.target.id; });
+          if (!match) return;
+          if (entry.isIntersecting) {
+            items.forEach(function(it) { it.link.classList.remove('toc-current'); });
+            match.link.classList.add('toc-current');
+          }
+        });
+      }, { rootMargin: '0px 0px -70% 0px', threshold: 0 });
+      items.forEach(function(it) { observer.observe(it.el); });
+    }
+  })();
+</script>
 
 </body>
 </html>
