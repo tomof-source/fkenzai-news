@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>フクシマ建材 社内通信 No.07 — マネゼミ第16期 第1講 登壇後 2026-05-18</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink-dark: #1F1B16;
+    --ink-dark-soft: #3A322A;
+    --terracotta: #C46330;
+    --terracotta-soft: #D89A6C;
+    --paper: #FAF6EE;
+    --paper-soft: #FDFAF2;
+    --ink: #2A2520;
+    --ink-soft: #5C544C;
+    --line: #E5DCC8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead {
+    background: var(--ink-dark);
+    color: #fff;
+    padding: 48px 0 56px;
+    border-bottom: 4px solid var(--terracotta);
+    position: relative;
+  }
+  .masthead::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--terracotta) 0%, var(--terracotta-soft) 50%, var(--terracotta) 100%);
+  }
+  .masthead-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 18px; margin-bottom: 28px;
+    font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+    font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--terracotta-soft);
+  }
+  .masthead h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .masthead .issue {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; letter-spacing: 0.3em;
+    color: var(--terracotta-soft);
+    margin-bottom: 8px;
+  }
+  .masthead .subtitle {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.15rem; font-weight: 500;
+    color: rgba(255,255,255,0.92);
+    border-left: 3px solid var(--terracotta); padding-left: 14px;
+    margin-top: 18px;
+  }
+  .meta {
+    margin-top: 28px;
+    display: flex; flex-wrap: wrap; gap: 14px 28px;
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .meta .icon { color: var(--terracotta-soft); }
+  .tags { margin-top: 14px; }
+  .tag {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem; letter-spacing: 0.15em;
+    background: rgba(196,99,48,0.15);
+    color: var(--terracotta-soft);
+    border: 1px solid var(--terracotta-soft);
+    padding: 3px 10px;
+    margin-right: 6px;
+    border-radius: 2px;
+  }
+
+  article { padding: 56px 0 80px; }
+  .lead {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.18rem; font-weight: 500;
+    border-left: 4px solid var(--terracotta);
+    padding: 4px 0 4px 20px;
+    margin-bottom: 40px;
+    color: var(--ink-dark);
+  }
+  h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 56px 0 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink-dark);
+    position: relative;
+  }
+  h2::before {
+    content: ''; position: absolute; bottom: -2px; left: 0;
+    width: 60px; height: 2px; background: var(--terracotta);
+  }
+  h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 36px 0 14px;
+    padding-left: 14px;
+    border-left: 4px solid var(--terracotta);
+  }
+  p { margin-bottom: 18px; }
+  p strong { color: var(--ink-dark); font-weight: 700; background: linear-gradient(transparent 60%, rgba(196,99,48,0.25) 60%); padding: 0 2px; }
+  ol, ul { margin: 0 0 24px 28px; }
+  li { margin-bottom: 8px; }
+
+  blockquote {
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: #fff;
+    border-left: 5px solid var(--terracotta);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.06);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.08rem; line-height: 1.85;
+    color: var(--ink-dark);
+    position: relative;
+  }
+  blockquote::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 700;
+    position: absolute; top: -14px; left: 14px;
+    color: var(--terracotta-soft); line-height: 1;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.88rem; color: var(--ink-soft);
+    font-style: normal; letter-spacing: 0.05em;
+  }
+  blockquote cite::before { content: '— '; color: var(--terracotta); }
+
+  .table-wrap {
+    margin: 24px 0;
+    background: #fff; border: 1px solid var(--line);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.04);
+    overflow-x: auto;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  th { background: var(--ink-dark); color: #fff; font-weight: 500; font-family: 'Noto Serif JP', serif; letter-spacing: 0.05em; }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { font-weight: 500; color: var(--ink-dark); }
+  tr:nth-child(even) td { background: var(--paper-soft); }
+
+  footer {
+    background: var(--ink-dark); color: rgba(255,255,255,0.85);
+    padding: 40px 0 32px; margin-top: 60px;
+    border-top: 4px solid var(--terracotta);
+  }
+  footer .container { font-size: 0.88rem; line-height: 1.8; }
+  footer .colophon { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.2em; font-size: 0.78rem; color: var(--terracotta-soft); margin-bottom: 14px; text-transform: uppercase; }
+  footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 18px 0; }
+  footer .source { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+  footer a { color: var(--terracotta-soft); text-decoration: none; border-bottom: 1px dotted var(--terracotta-soft); }
+
+  .divider {
+    text-align: center;
+    margin: 48px 0;
+    color: var(--terracotta);
+    letter-spacing: 0.5em;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .divider::before, .divider::after {
+    content: ''; display: inline-block; width: 80px; height: 1px;
+    background: var(--terracotta); vertical-align: middle; margin: 0 14px;
+  }
+
+  .note {
+    margin: 32px 0; padding: 16px 22px;
+    background: var(--paper-soft); border: 1px dashed var(--terracotta-soft);
+    font-size: 0.92rem; color: var(--ink-soft);
+    border-radius: 2px;
+  }
+
+  .backlink { margin-top: 24px; }
+  .backlink a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem; letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.4);
+  }
+  .backlink a:hover { color: var(--terracotta-soft); border-bottom-color: var(--terracotta-soft); }
+
+  .toc { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--terracotta); box-shadow: 0 2px 10px rgba(31,27,22,0.04); padding: 20px 24px; margin: 0 0 40px; }
+  .toc-title { font-family: 'Noto Serif JP', serif; font-weight: 700; font-size: 1.05rem; color: var(--ink-dark); margin-bottom: 12px; letter-spacing: 0.05em; }
+  .toc-title::before { content: 'CONTENTS'; display: block; font-family: 'Cormorant Garamond', serif; font-size: 0.7rem; letter-spacing: 0.3em; color: var(--terracotta); margin-bottom: 4px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc-counter; }
+  .toc ol li { counter-increment: toc-counter; margin-bottom: 6px; padding-left: 26px; position: relative; font-size: 0.95rem; line-height: 1.5; }
+  .toc ol li::before { content: counter(toc-counter, decimal-leading-zero); position: absolute; left: 0; top: 0; font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: var(--terracotta); font-weight: 500; }
+  .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px dotted transparent; transition: color 0.15s, border-color 0.15s; }
+  .toc a:hover { color: var(--terracotta); border-bottom-color: var(--terracotta-soft); }
+  .toc a.toc-current { color: var(--terracotta); font-weight: 700; border-bottom-color: var(--terracotta); }
+
+  .series-related { margin: 56px 0 32px; padding: 28px 0 0; border-top: 2px solid var(--ink-dark); position: relative; }
+  .series-related::before { content: ''; position: absolute; top: -2px; left: 0; width: 60px; height: 2px; background: var(--terracotta); }
+  .series-related h2 { border: none; padding: 0; margin: 0 0 22px; }
+  .series-related h2::before { display: none; }
+  .series-related .label { font-family: 'Cormorant Garamond', serif; font-size: 0.78rem; letter-spacing: 0.3em; color: var(--terracotta); text-transform: uppercase; margin-bottom: 4px; display: block; }
+  .series-list { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+  .series-card { background: #fff; border: 1px solid var(--line); box-shadow: 0 2px 8px rgba(31,27,22,0.04); transition: transform 0.15s, box-shadow 0.15s; }
+  .series-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(31,27,22,0.08); }
+  .series-card a { display: block; padding: 18px 22px; color: inherit; text-decoration: none; }
+  .series-card .badge { display: inline-block; font-family: 'Cormorant Garamond', serif; font-size: 0.72rem; letter-spacing: 0.15em; background: rgba(196,99,48,0.12); color: var(--terracotta); border: 1px solid var(--terracotta-soft); padding: 2px 8px; margin-right: 8px; border-radius: 2px; text-transform: uppercase; }
+  .series-card .date { font-family: 'Cormorant Garamond', serif; font-size: 0.82rem; letter-spacing: 0.1em; color: var(--ink-soft); }
+  .series-card h3 { font-family: 'Noto Serif JP', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink-dark); margin: 8px 0 4px; border: none; padding: 0; line-height: 1.5; }
+  .series-card p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 1.7rem; }
+    .masthead-top { flex-direction: column; gap: 8px; align-items: flex-start; }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1.05rem; }
+    article { padding: 40px 0 60px; }
+    .toc { padding: 16px 18px; }
+    .series-card a { padding: 14px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-top">
+      <span>FKENZAI &middot; STAFF NOTES</span>
+      <span>No. 07 / May 18, 2026</span>
+    </div>
+    <div class="issue">ISSUE 07 &mdash; MANAZEMI</div>
+    <h1>マネゼミ第16期 第1講 登壇後 No.07 — 自知と健全な危機感</h1>
+    <p class="subtitle">自分を厳しく見るクセを否定しない。<br>ただし、それを社員への悲壮感に変えてはいけない。一日を越えて残った気づき。</p>
+    <div class="meta">
+      <span><span class="icon">📅</span> 2026年5月18日（月）</span>
+      <span><span class="icon">📍</span> 登壇日：2026年5月16日（土）／ 振り返り収録：月曜朝</span>
+      <span><span class="icon">👥</span> 福嶋智和（個人ボイスメモ）</span>
+    </div>
+    <div class="tags">
+      <span class="tag">マネゼミ振り返り</span>
+      <span class="tag">自知</span>
+      <span class="tag">健全な危機感</span>
+      <span class="tag">AI活用</span>
+    </div>
+    <div class="backlink"><a href="../../">&larr; 一覧へ戻る</a></div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="lead">マネジメントリーダーゼミ <strong>第16期 第1講</strong> に登壇した翌週、自分の中に残った気づきを言葉にした記録。<strong>自知</strong>（自分をどう見るか／どう知るか）、<strong>健全な危機感</strong> と <strong>悲壮感</strong> の境界、そして週明けからの <strong>AI との向き合い方</strong> ― この3点に話が落ちた。会議議事録ではなく、登壇者本人の独白ベースの振り返り号。</p>
+
+    <nav class="toc" id="toc" aria-label="目次">
+      <div class="toc-title">目次</div>
+      <ol id="toc-list"></ol>
+    </nav>
+
+    <h3 style="margin-top: 0;">本日の参加者</h3>
+    <p>福嶋智和（個人ボイスメモ・独白形式）。本記事は会議議事録ではなく、登壇後の自己振り返りを社内通信のフォーマットに整えたもの。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>1. 第1講に登壇して</h2>
+
+    <h3>講師が準備しにくいスタイルに変えた</h3>
+
+    <p>マネジメントリーダーゼミ第16期、その<strong>1講目に登壇</strong>した。今期は外部の方が聞きに来られるということもあり、いつもの形からかなり変えた。<strong>講師側があらかじめ作り込みにくいスタイル</strong>、つまり受講者一人ひとりの気づきが講義の主役になる形に振り直した。</p>
+
+    <p>この形にすると、講師としては読みづらいし、当日にならないと何が起こるか分からない。けれど狙いは <strong>「一人一人、何ができたか」</strong> に主軸を戻すこと。教える側のページをめくることではなく、受講者の側で <strong>自分の輪郭が見える</strong> ことを優先したかった。</p>
+
+    <h3>主題は「人間関係」と「自知」</h3>
+
+    <p>講義を通して改めて確認したのは、結局のところマネジメントの土台は <strong>人間関係</strong> だということ。そしてその人間関係を成立させる前提として、<strong>自分をどう見ているか／どう知るか</strong> ―― いわゆる <strong>「自知」</strong> がやはり外せない。</p>
+
+    <blockquote>
+      人間関係、人間関係。自分をどう見ているか、自分をどう知るか、自知というものがやっぱり大事だなというところも感じた。
+      <cite>登壇者本人・第1講後の独白より</cite>
+    </blockquote>
+
+    <div class="divider">◆</div>
+
+    <h2>2. 自分を厳しく見るクセ</h2>
+
+    <h3>「クタクタになった」と素直に言えた</h3>
+
+    <p>講義そのものは一定の評価をもらえた。ただ自分の中ではまだ足りない部分が残っていて、最後に思わず <strong>「クタクタになった」</strong> と漏らした。そこを <strong>労ってもらえた</strong> ことに、自分の中で温度が残った。</p>
+
+    <h3>外からの高い評価と、自分の見立てのズレ</h3>
+
+    <p>同じ週、取引銀行の担当者の方が来訪され、<strong>「やっぱりすごい会社ですよ」</strong> と評してくださった。半分は営業的な言葉として聞いておくべきだとしても、<strong>外からの評価</strong> と <strong>自分の自己評価</strong> には常にズレがある。</p>
+
+    <p>そのズレを見て改めて自覚したのは、<strong>自分はいつまでも自分に対して厳しめに見ている</strong> ということ。これは欠点ではなく、自分の傾向のひとつとして受け止めて良い。むしろ、その厳しさが <strong>「健全な危機感」</strong> を生む源にもなっている。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>3. 健全な危機感と、悲壮感の境界</h2>
+
+    <h3>同じ危機感でも、伝わり方で意味が変わる</h3>
+
+    <p>ただし、ここで大事なのは線引き。経営者として自分の中に <strong>健全な危機感</strong> を持つこと自体は良い。問題は、それが <strong>社員への「悲壮感」として伝わってしまう</strong> ことだ。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>区別</th><th>持ち主</th><th>性質</th><th>影響</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>健全な危機感</td><td>経営者（自分の内側）</td><td>判断の解像度を上げる燃料</td><td>意思決定の質が上がる</td></tr>
+          <tr><td>悲壮感</td><td>社員（受け取り側）</td><td>「うちは大丈夫なのか」という不安</td><td>士気・主体性を削る</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>同じ情報でも、自分の中で <strong>燃料</strong> として扱うのと、社員に <strong>圧</strong> として渡してしまうのとでは意味が逆になる。今後のマネジメントにおいて、ここの伝え方は意識的に設計していく必要がある。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>4. 週末と、週明けの構え直し</h2>
+
+    <h3>自分と、家族と向き合う時間</h3>
+
+    <p>毎年、マネジメント講師の役は本当に消耗する。今回はそれでも <strong>ある程度「形」が作れた</strong> という手応えが残った。そのまま走り抜けず、週末は意識的に <strong>自分と向き合う／家族と向き合う</strong> 時間に振った。素晴らしい時間が持てたことに、率直に感謝が残った。</p>
+
+    <h3>AI の向き合い方を切り替える</h3>
+
+    <p>そして週明けからは <strong>仕事一直線</strong>。特に <strong>AIとの向き合い方</strong> に手を入れる。これまでの広く触る使い方から、<strong>本業に直接効く形でAIを稼働させる</strong> 方向に明示的に切り替える。</p>
+
+    <blockquote>
+      しっかりと、本業一直線にAIを活躍させるというやり方でやっていきたい。
+      <cite>登壇者本人・週明けの方針宣言</cite>
+    </blockquote>
+
+    <div class="divider">◆</div>
+
+    <h2>本日の主要な気づき</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>気づき・確認できたこと</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>講義スタイル</td><td>講師が準備しにくいスタイルでも、<strong>受講者一人ひとりの気づき</strong> を主役に置けば成立する</td></tr>
+          <tr><td>主題</td><td>マネジメントの土台は <strong>人間関係</strong>。その前提として <strong>自知</strong> が外せない</td></tr>
+          <tr><td>自己評価</td><td>自分を厳しめに見るクセは <strong>悪いことではない</strong>。自分の傾向として受け止めてよい</td></tr>
+          <tr><td>危機感の扱い</td><td><strong>健全な危機感</strong>（経営者の内側）と <strong>悲壮感</strong>（社員側）の境界を意識的に引く</td></tr>
+          <tr><td>AI活用</td><td>広く触る使い方から、<strong>本業に直接効く形</strong> に明示的に切り替える</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>アクションアイテム</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>タスク</th><th>担当</th><th>期限</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>健全な危機感</strong> が社員に <strong>悲壮感</strong> として伝わらないよう、伝え方・コミュニケーション方法を検討・実践する</td><td>福嶋智和</td><td>継続実施</td></tr>
+          <tr><td>AIの活用スタイルを <strong>本業直結</strong> に絞り直す。具体的な活用計画を策定し、実行に移す</td><td>福嶋智和</td><td>継続実施</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>次の節目</h2>
+
+    <h3>マネゼミ第16期 第2講</h3>
+    <p>講義スタイルの転換が第1講で機能したかどうかは、第2講以降の受講者反応で確認する。第1講で生まれた <strong>「自知」「人間関係」</strong> の問いを、回を重ねるごとにどう深められるかが鍵。</p>
+
+    <h3>AI活用の見直し</h3>
+    <p>週明け以降、本業（窓・内窓・補助金・施工現場）に <strong>直接効く</strong> 形でAIの使い方を具体化する。広く触る段階から、効く一点に振る段階へ。</p>
+
+    <section class="series-related">
+      <h2><span class="label">Other Issues</span>最近の社内通信</h2>
+      <ul class="series-list">
+        <li class="series-card">
+          <a href="../../exec/2026-05-13/">
+            <span class="badge">No. 06 · Exec</span>
+            <span class="date">2026.05.13 WED</span>
+            <h3>経営支援 — 上半期の確認と、下半期への切り替え</h3>
+            <p>1日2部構成。午前は業績・組織・権限、午後はダッシュボード・Web広告・DM・組織再構築。</p>
+          </a>
+        </li>
+        <li class="series-card">
+          <a href="../../manazemi/2026-04-17/">
+            <span class="badge">No. 05 · Manazemi</span>
+            <span class="date">2026.04.17 FRI</span>
+            <h3>マネゼミ第1講 構成会議 — 自己確立から人間関係へ</h3>
+            <p>松尾講師との打ち合わせで、第16期 第1講の骨格が固まった。</p>
+          </a>
+        </li>
+        <li class="series-card">
+          <a href="../../marketing/2026-04-12/">
+            <span class="badge">No. 04 · Marketing</span>
+            <span class="date">2026.04.12 SUN</span>
+            <h3>広報・マーケ定例 — 年間450件への次の一手</h3>
+            <p>ファネル再点検、SNS内製化、テーマ別ショールーム相談会。</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <h2>編集後記</h2>
+
+    <p>本号は他号と少し性質が違う。会議の議事録ではなく、<strong>登壇者本人の独白</strong> をベースにした振り返り。会議で交わされた発言ではなく、一日が終わったあと、ひとりの頭の中に残った言葉を拾っている。</p>
+
+    <p>面白いのは、これだけ短い独白の中に、<strong>「自分は自分に厳しいクセがある」</strong>「<strong>その厳しさは悪くないが、社員には悲壮感として渡してはいけない</strong>」という、<strong>同じ性質の2側面</strong>がきちんと並んでいることだ。経営者が自分の癖を否定せず、ただし社員への波及だけは線を引いて管理する。この距離の取り方そのものが、第1講で語った「自知」の実践に見える。</p>
+
+    <p>もう一点。AIとの向き合い方を <strong>「広く触る」</strong> から <strong>「本業に直接効かせる」</strong> に切り替える、という宣言は、社内通信としては小さな1行に見えるけれど、日々の運用には大きく効いてくる。今期、AI活用の焦点を <strong>本業の生産性</strong> 側に置き直すという <strong>方針アンカー</strong> として読める一行になっている。</p>
+
+    <div class="note">
+      ※ 本記事は、登壇翌週のボイスメモ（議事録_test_動作確認_260518_1542_20260518）を素材に、AIによる構成・編集を経て作成しています。誤字・事実誤認の可能性があります。お気づきの点があれば、発行元までご一報ください。
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <div class="colophon">Fkenzai &middot; Staff Notes &middot; Issue 07 &middot; Manazemi</div>
+    <p>フクシマ建材 社内通信 No.07（マネゼミ第16期 第1講 登壇後号） / 発行：フクシマ建材株式会社 / 編集：AI秘書</p>
+    <hr>
+    <p class="source">本記事はフクシマ建材株式会社の社内共有を主目的とした活動記録です。掲載内容にはスタッフ・パートナーの発言が含まれます。</p>
+    <p class="source" style="margin-top: 8px;">本記事はAIによる議事録の要約をベースに編集しているため、誤字や事実誤認が含まれる可能性があります。お気づきの点があれば、ぜひ発行元までご指摘ください。修正・削除のご要望も同様に承ります。</p>
+    <p class="source" style="margin-top: 8px;">出典：当日の振り返り（社内記録） ／ 検索エンジン除外設定（noindex, nofollow）</p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var tocList = document.getElementById('toc-list');
+    var headings = document.querySelectorAll('article h2');
+    if (!tocList || headings.length === 0) {
+      var toc = document.getElementById('toc');
+      if (toc) toc.style.display = 'none';
+      return;
+    }
+    var items = [];
+    headings.forEach(function(h, idx) {
+      if (h.closest('.series-related')) return;
+      if (!h.id) { h.id = 'sec-' + (idx + 1); }
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent.replace(/^\d+\.\s*/, '');
+      li.appendChild(a);
+      tocList.appendChild(li);
+      items.push({ id: h.id, el: h, link: a });
+    });
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          var match = items.find(function(it) { return it.id === entry.target.id; });
+          if (!match) return;
+          if (entry.isIntersecting) {
+            items.forEach(function(it) { it.link.classList.remove('toc-current'); });
+            match.link.classList.add('toc-current');
+          }
+        });
+      }, { rootMargin: '0px 0px -70% 0px', threshold: 0 });
+      items.forEach(function(it) { observer.observe(it.el); });
+    }
+  })();
+</script>
+
+</body>
+</html>
