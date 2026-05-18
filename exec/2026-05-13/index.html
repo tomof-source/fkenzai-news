@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>フクシマ建材 社内通信 No.06 — 経営支援 2026-05-13（午前・午後）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink-dark: #1F1B16;
+    --ink-dark-soft: #3A322A;
+    --terracotta: #C46330;
+    --terracotta-soft: #D89A6C;
+    --paper: #FAF6EE;
+    --paper-soft: #FDFAF2;
+    --ink: #2A2520;
+    --ink-soft: #5C544C;
+    --line: #E5DCC8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead {
+    background: var(--ink-dark);
+    color: #fff;
+    padding: 48px 0 56px;
+    border-bottom: 4px solid var(--terracotta);
+    position: relative;
+  }
+  .masthead::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--terracotta) 0%, var(--terracotta-soft) 50%, var(--terracotta) 100%);
+  }
+  .masthead-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 18px; margin-bottom: 28px;
+    font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+    font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--terracotta-soft);
+  }
+  .masthead h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .masthead .issue {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; letter-spacing: 0.3em;
+    color: var(--terracotta-soft);
+    margin-bottom: 8px;
+  }
+  .masthead .subtitle {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.15rem; font-weight: 500;
+    color: rgba(255,255,255,0.92);
+    border-left: 3px solid var(--terracotta); padding-left: 14px;
+    margin-top: 18px;
+  }
+  .meta {
+    margin-top: 28px;
+    display: flex; flex-wrap: wrap; gap: 14px 28px;
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .meta .icon { color: var(--terracotta-soft); }
+  .tags { margin-top: 14px; }
+  .tag {
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.78rem; letter-spacing: 0.15em;
+    background: rgba(196,99,48,0.15);
+    color: var(--terracotta-soft);
+    border: 1px solid var(--terracotta-soft);
+    padding: 3px 10px;
+    margin-right: 6px;
+    border-radius: 2px;
+  }
+
+  article { padding: 56px 0 80px; }
+  .lead {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.18rem; font-weight: 500;
+    border-left: 4px solid var(--terracotta);
+    padding: 4px 0 4px 20px;
+    margin-bottom: 40px;
+    color: var(--ink-dark);
+  }
+  h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 56px 0 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink-dark);
+    position: relative;
+  }
+  h2::before {
+    content: ''; position: absolute; bottom: -2px; left: 0;
+    width: 60px; height: 2px; background: var(--terracotta);
+  }
+  h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem; font-weight: 700;
+    color: var(--ink-dark);
+    margin: 36px 0 14px;
+    padding-left: 14px;
+    border-left: 4px solid var(--terracotta);
+  }
+  h4 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.05rem; font-weight: 700;
+    color: var(--ink-dark-soft);
+    margin: 28px 0 10px;
+    padding-left: 12px;
+    border-left: 2px solid var(--terracotta-soft);
+  }
+  p { margin-bottom: 18px; }
+  p strong { color: var(--ink-dark); font-weight: 700; background: linear-gradient(transparent 60%, rgba(196,99,48,0.25) 60%); padding: 0 2px; }
+  ol, ul { margin: 0 0 24px 28px; }
+  li { margin-bottom: 8px; }
+
+  blockquote {
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: #fff;
+    border-left: 5px solid var(--terracotta);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.06);
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.08rem; line-height: 1.85;
+    color: var(--ink-dark);
+    position: relative;
+  }
+  blockquote::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 700;
+    position: absolute; top: -14px; left: 14px;
+    color: var(--terracotta-soft); line-height: 1;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.88rem; color: var(--ink-soft);
+    font-style: normal; letter-spacing: 0.05em;
+  }
+  blockquote cite::before { content: '— '; color: var(--terracotta); }
+
+  .table-wrap {
+    margin: 24px 0;
+    background: #fff; border: 1px solid var(--line);
+    box-shadow: 0 2px 10px rgba(31,27,22,0.04);
+    overflow-x: auto;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  th { background: var(--ink-dark); color: #fff; font-weight: 500; font-family: 'Noto Serif JP', serif; letter-spacing: 0.05em; }
+  tr:last-child td { border-bottom: none; }
+  td:first-child { font-weight: 500; color: var(--ink-dark); }
+  tr:nth-child(even) td { background: var(--paper-soft); }
+
+  footer {
+    background: var(--ink-dark); color: rgba(255,255,255,0.85);
+    padding: 40px 0 32px; margin-top: 60px;
+    border-top: 4px solid var(--terracotta);
+  }
+  footer .container { font-size: 0.88rem; line-height: 1.8; }
+  footer .colophon { font-family: 'Cormorant Garamond', serif; letter-spacing: 0.2em; font-size: 0.78rem; color: var(--terracotta-soft); margin-bottom: 14px; text-transform: uppercase; }
+  footer hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 18px 0; }
+  footer .source { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+  .divider {
+    text-align: center;
+    margin: 48px 0;
+    color: var(--terracotta);
+    letter-spacing: 0.5em;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .divider::before, .divider::after {
+    content: ''; display: inline-block; width: 80px; height: 1px;
+    background: var(--terracotta); vertical-align: middle; margin: 0 14px;
+  }
+
+  /* Session divider — マルチモード用 */
+  .session-divider {
+    margin: 56px 0 32px;
+    padding: 18px 24px;
+    background: var(--ink-dark);
+    color: #fff;
+    text-align: center;
+    border-left: 6px solid var(--terracotta);
+  }
+  .session-divider .label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem; letter-spacing: 0.3em;
+    color: var(--terracotta-soft);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .session-divider .title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.4rem; font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .session-divider .time {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .note {
+    margin: 32px 0; padding: 16px 22px;
+    background: var(--paper-soft); border: 1px dashed var(--terracotta-soft);
+    font-size: 0.92rem; color: var(--ink-soft);
+    border-radius: 2px;
+  }
+
+  .backlink { margin-top: 24px; }
+  .backlink a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem; letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.7); text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.4);
+  }
+  .backlink a:hover { color: var(--terracotta-soft); border-bottom-color: var(--terracotta-soft); }
+
+  @media (max-width: 600px) {
+    .masthead h1 { font-size: 1.7rem; }
+    .masthead-top { flex-direction: column; gap: 8px; align-items: flex-start; }
+    h2 { font-size: 1.3rem; }
+    h3 { font-size: 1.05rem; }
+    article { padding: 40px 0 60px; }
+    .session-divider .title { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-top">
+      <span>FKENZAI &middot; STAFF NOTES</span>
+      <span>No. 06 / May 13, 2026</span>
+    </div>
+    <div class="issue">ISSUE 06 &mdash; EXEC &middot; 1日2部構成</div>
+    <h1>経営支援 No.06 — 上半期の確認と、下半期への切り替え</h1>
+    <p class="subtitle">午前は業績・組織・権限の整理。午後はダッシュボード・Web広告・DM・組織再構築。<br>1日通しで上半期を締めて、下半期の構えを決めた1日。</p>
+    <div class="meta">
+      <span><span class="icon">📅</span> 2026年5月13日（水） 09:04〜16:30 頃</span>
+      <span><span class="icon">📍</span> オンライン（Meet）</span>
+      <span><span class="icon">👥</span> 福嶋智和 ＋ 経営支援パートナー</span>
+    </div>
+    <div class="tags">
+      <span class="tag">経営支援</span>
+      <span class="tag">1日2部</span>
+      <span class="tag">上半期締め</span>
+      <span class="tag">下半期構え</span>
+    </div>
+    <div class="backlink"><a href="../../">&larr; 一覧へ戻る</a></div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+
+    <p class="lead">2026年5月13日、<strong>朝9時から夕方まで1日通し</strong> で行われた経営支援セッション。午前は <strong>上半期の業績振り返り</strong> と <strong>組織の役割権限・意思決定プロセス</strong> の整理に時間を使い、午後は <strong>経営ダッシュボード／Web広告／DM／営業組織再構築</strong> という下半期の打ち手に話題が移った。1日を通すと、「数字を整え」「組織を変え」「集客の経路を切り替える」という3本の柱が、6月から動く下半期の構えとして並んだ。</p>
+
+    <h3 style="margin-top: 0;">本日の流れ</h3>
+    <p>午前の部（09:04〜）と午後の部（13:01〜）の2セッション構成。両方ともMeetで録画され、Geminiが文字起こし・要約まで自動生成。本記事はその2本の議事録を1日通しの社内通信として統合したもの。</p>
+
+    <div class="divider">◆</div>
+
+    <div class="session-divider">
+      <div class="label">Session I</div>
+      <div class="title">午前の部 — 上半期の整理</div>
+      <div class="time">2026-05-13 09:04 JST 〜</div>
+    </div>
+
+    <h2>1. 上半期の業績と財務体質</h2>
+
+    <p>3月末時点でのBS／PLが共通の出発点。下半期に向けた現実的な予測と対策の話につながった。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>現状（3月末時点）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>当期純利益（目標）</td><td>年間 <strong>1,500万円</strong>（半期で経常 1,684万円を確保）</td></tr>
+          <tr><td>短期借入金</td><td>1,000万円（回収と借入を繰り返し）</td></tr>
+          <tr><td>長期借入金</td><td>半年で約4,000万円まで減少</td></tr>
+          <tr><td>純資産</td><td>会社設立以降の積み上げで <strong>1億37万円</strong></td></tr>
+          <tr><td>粗利率</td><td>当初47% → 直近で <strong>3ポイント上昇</strong>（下請け減・元請け増）</td></tr>
+          <tr><td>価格転嫁</td><td>仕入れ上昇分を <strong>100%転嫁</strong>、粗利率を維持</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>銀行からの借入の一部はグループ証券会社で運用し、金利差益を取る形。健全な財務状態を保ちつつ、純資産を積み上げてきた手応えが見える。</p>
+
+    <h2>2. 役員報酬・経費・研修費の方針</h2>
+
+    <ul>
+      <li>親族への家賃支払いを減らし、その分を <strong>役員報酬へ振り替える</strong> 方向を検討</li>
+      <li>販売促進費（旧「反則費」と呼んでいた条件付きリベート）は <strong>廃止</strong>。全顧客に一律の促進策へ切り替える</li>
+      <li>今期は社員研修を強化する方針で、<strong>研修費を増額</strong>。交際費と教育研修費を明確に区分し、効果を測定できる体制に</li>
+    </ul>
+
+    <h2>3. 組織マネジメント — 行動変容と振り返り</h2>
+
+    <p>問い合わせ件数の減少という課題に対し、<strong>現場社員ができる打ち手</strong> として「見積もり提出後の顧客フォロー徹底」が挙がった。個人目標と営業部隊全体の目標管理、定期的な振り返りを組み合わせる方向で整理された。</p>
+
+    <blockquote>
+      会議を単なる報告の場にせず、議論を通じて成果を生む場にする。<br>
+      事前にレジュメを配り、目的と期待ゴールを明確にしてから入る。
+      <cite>会議運営の方針整理</cite>
+    </blockquote>
+
+    <p>PDCAは月次の結果確認だけでなく、<strong>週単位または10日単位</strong> で進捗を見て、目標との乖離を都度修正する手法に切り替える。</p>
+
+    <h2>4. 権限と意思決定の明確化</h2>
+
+    <p>上位者がどこまでを現場に委ね、どこからを社長決裁とするか。この <strong>「許容点」</strong> を明確に設定する必要性が指摘された。</p>
+
+    <ul>
+      <li>業務ルールを明文化しないまま曖昧にすると組織が乱れる</li>
+      <li>数値や段階的な判断基準を <strong>明確に定める</strong> ことが、組織の成長条件</li>
+      <li>上司が「言うだけ」で承認プロセスを放棄すると、部下の思考停止やリスク回避を招く</li>
+      <li>指示を出した業務には、<strong>上司が責任を持って関与する</strong> 構図を築く</li>
+    </ul>
+
+    <h2>5. 顧客データの収集と業務記録のデジタル化</h2>
+
+    <ul>
+      <li>受注に至った顧客に、<strong>何がきっかけで自社を知ったか</strong> を徹底的に記録する仕組みを構築</li>
+      <li>集客チャネル分析・広告効果測定の基盤として、これを必須運用に</li>
+      <li>電話問い合わせや面談記録は、AIなどで効率的にデータ化・形式化</li>
+      <li>現場での記録漏れ・トラブル防止のため、カーボンコピーや写真撮影を活用</li>
+    </ul>
+
+    <h2>6. 組織の指揮命令系統と役割権限</h2>
+
+    <p>誰が誰を指導・管理するのかという <strong>指揮命令系統が曖昧</strong> である点が、業務遂行上の根本課題として指摘された。</p>
+
+    <blockquote>
+      役職や役割権限を、年齢や経歴とは切り離して、メンバー全員に納得感のある形で周知する。<br>
+      小規模組織特有の「みんなで取り組む」を維持しつつ、責任の所在と役割分担を明確化するフェーズ。
+      <cite>組織変革の方向性</cite>
+    </blockquote>
+
+    <h3>午前の主要決定</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>確定内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>販売促進費の扱い</td><td>条件付きリベートを <strong>廃止</strong>、全顧客一律の促進策に変更</td></tr>
+          <tr><td>研修費</td><td>今期は <strong>増額</strong>。教育研修費と交際費を区分</td></tr>
+          <tr><td>PDCAの粒度</td><td>月次だけでなく <strong>週次／10日単位</strong> で進捗確認・修正</td></tr>
+          <tr><td>会議運営</td><td>事前レジュメ配布。目的・期待ゴールを明示してから議論</td></tr>
+          <tr><td>権限の明文化</td><td>社長決裁／現場決裁の <strong>許容点を数値・段階で明確化</strong></td></tr>
+          <tr><td>顧客接触経路</td><td>「何がきっかけで知ったか」を必須記録項目に</td></tr>
+          <tr><td>業務記録</td><td>AIによるデータ化＋カーボンコピー・写真で記録漏れ防止</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="session-divider">
+      <div class="label">Session II</div>
+      <div class="title">午後の部 — 下半期の打ち手</div>
+      <div class="time">2026-05-13 13:01 JST 〜</div>
+    </div>
+
+    <h2>7. 経営ダッシュボードと指標の最適化</h2>
+
+    <p>経営判断に効く数値を整理し直す回。月次データと <strong>移動年計（移動平均）</strong> を併列で表示するグラフを整備中。チャネル別・商品別の推移をAIで分析グラフ化する仕組みも構築中。</p>
+
+    <blockquote>
+      M（マーケティング）・Q（クオリティ／問い合わせ）・F（ファイナンス／広告宣伝費）の<br>
+      3要素を相互に関連付け、最大化を図る。
+      <cite>KPI整理の方針</cite>
+    </blockquote>
+
+    <p>ダッシュボードに <strong>広告宣伝費を追加</strong> し、費用対効果と相関性を可視化する改修を行う方針。</p>
+
+    <h2>8. 日報・改善提案の運用</h2>
+
+    <p>日報システムから改善提案を抽出する仕組みは運用中だが、現状は提案の質にばらつきがある。今後は <strong>事実ベース・客観的・論理的</strong> な情報抽出ができるよう、入力ルールと表現を精査する。</p>
+
+    <h2>9. AI活用の方針</h2>
+
+    <ul>
+      <li>AI導入は単なる手段。<strong>現状と目指す姿のギャップを埋める</strong> ためのもの、と定義し直す</li>
+      <li>毎週木曜の全社勉強会で、AIの活用と業務改善の意識付けを継続</li>
+      <li>「魔人エージェント」のようなコード不要のアプリ開発ツールで、現場の困りごとを即アプリ化</li>
+      <li>自動化と人による確認のバランス：何度か試行し信頼性を確認してから運用に回す</li>
+      <li>半年〜1年先を見据えた、業務単位のAI化ロードマップを策定。<strong>責任者を明確化</strong></li>
+    </ul>
+
+    <h2>10. 資産保全と運用</h2>
+
+    <p>将来の経済変動・インフレリスク・円の価値低下に備え、<strong>会社資産と個人資産の保全</strong> を戦略的に整理する方向。リスクヘッジとして、実物資産（金）保有や、ネット証券を通じた法人口座運用などを選択肢として並べる。</p>
+
+    <h2>11. 顧客データベース統合とDM計画</h2>
+
+    <p>分散している過去顧客データを <strong>顧客IDで統合</strong> する作業が進行中。これにより、受注率・単価の分析がより正確に行える基盤を構築する。</p>
+
+    <h3>季節のお便り（DM）送付計画</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>開始時期</td><td><strong>6月末</strong> 第1回送付</td></tr>
+          <tr><td>頻度</td><td>四半期に1回（年4回）</td></tr>
+          <tr><td>当初案</td><td>500枚／回でテスト開始</td></tr>
+          <tr><td>本実装</td><td><strong>1,500枚／回</strong>（年間合計4,000枚規模）</td></tr>
+          <tr><td>対象</td><td>顧客との関わり度合いで <strong>A・B・C分類</strong>、A優先</td></tr>
+          <tr><td>目標成果</td><td>年間 <strong>5〜8件の受注獲得</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>分類基準（A・B・C）には情報欠落や担当者判断のバラつきがあるため、<strong>ルールの再定義と精査</strong> を進める。住所データとID管理のフォーマットも統一する。</p>
+
+    <h2>12. 営業方針の転換</h2>
+
+    <p>新規顧客の個別開拓に加え、<strong>マンション管理会社や組合といった上流層</strong> へ直接提案する方針が議論された。現在のWeb広告のみの集客には限界があるため、営業専属体制の構築と、ターゲットの明確化を伴う組織変革が必要、という認識で揃った。</p>
+
+    <h2>13. Web広告の運用見直し</h2>
+
+    <p>広告費月額約30万円を投入しているが、問い合わせは横ばい〜減少傾向。打ち手は2方向：</p>
+
+    <ul>
+      <li><strong>量より質</strong>：Webサイトの内容そのものを魅力的に改善、ライター起用も検討</li>
+      <li><strong>一時停止して効果検証</strong>：広告なしでも同程度の反響が得られる可能性があるため、停止して比較</li>
+    </ul>
+
+    <h2>14. アナログ手法と季節戦略</h2>
+
+    <ul>
+      <li>特定エリアへの <strong>チラシ配布・ポスティング</strong> を6月中に展開できるよう準備</li>
+      <li>電気代高騰への不安など、顧客心理に沿ったプロモーション</li>
+      <li>夏場は <strong>単価の安い商品</strong> で新規接点を作り、その後の高額商品リピートに繋げる</li>
+      <li>夏向け商品の <strong>専用ページ</strong> 作成。SEO強化のためブログ記事自動生成・投稿の仕組みも検討</li>
+    </ul>
+
+    <h2>15. 社内環境と組織体制</h2>
+
+    <ul>
+      <li>週4日勤務スタッフ採用など <strong>柔軟な働き方</strong> を導入</li>
+      <li>有給休暇制度の整備、アルコールチェックアプリ導入などデジタル化推進</li>
+      <li>特定の個人に業務が依存しない体制構築</li>
+      <li>次年度に向けた組織の <strong>機能設計を根本から見直す</strong></li>
+    </ul>
+
+    <h3>午後の主要決定</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>確定内容</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>経営ダッシュボード</td><td>広告宣伝費を加え、<strong>M・Q・F</strong> 3要素で費用対効果を可視化</td></tr>
+          <tr><td>AI活用ロードマップ</td><td>半年〜1年先を見据えた業務単位のAI化計画、責任者を明確化</td></tr>
+          <tr><td>顧客DB</td><td>分散データを <strong>顧客IDで統合</strong>。A・B・C分類ルールを再定義</td></tr>
+          <tr><td>DM計画</td><td>6月末初回／四半期1回／<strong>1,500枚／回</strong>／年間5〜8件受注を狙う</td></tr>
+          <tr><td>営業ターゲット</td><td>マンション管理会社・組合など <strong>上流層への直接提案</strong></td></tr>
+          <tr><td>Web広告</td><td>一度 <strong>停止して効果検証</strong>。並行してサイト内容の質を改善</td></tr>
+          <tr><td>アナログ集客</td><td>6月中にチラシ配布・ポスティングを展開</td></tr>
+          <tr><td>夏戦略</td><td>低単価商品で新規接点 → 高額リピートへの導線</td></tr>
+          <tr><td>組織設計</td><td>次年度に向けて <strong>機能設計を根本から見直す</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>1日全体の主要決定（午前午後を統合）</h2>
+
+    <p>1日通して並んだのは、<strong>「数字を整える」「組織を変える」「集客の経路を切り替える」</strong> の3本柱。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>柱</th><th>具体的な動き</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>数字を整える</strong></td><td>ダッシュボード（M・Q・F）／週次〜10日PDCA／粗利率の維持</td></tr>
+          <tr><td><strong>組織を変える</strong></td><td>権限の明文化／指揮命令系統の整理／次年度に向けた機能設計の見直し</td></tr>
+          <tr><td><strong>集客を切り替える</strong></td><td>Web広告一時停止 ＋ DM1,500枚 ＋ アナログ施策 ＋ 上流層への提案</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>アクションアイテム（1日合算）</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>タスク</th><th>カテゴリ</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>販売促進費（条件付きリベート）を廃止し、一律促進策へ移行</td><td>財務・営業</td></tr>
+          <tr><td>権限・許容点の明文化（社長決裁／現場決裁の境界）</td><td>組織</td></tr>
+          <tr><td>顧客接触経路の必須記録ルール導入</td><td>営業</td></tr>
+          <tr><td>業務記録のAIデータ化＋カーボン・写真活用</td><td>業務</td></tr>
+          <tr><td>経営ダッシュボードに広告費を追加・改修</td><td>DX</td></tr>
+          <tr><td>顧客IDによるデータベース統合・A/B/C分類ルール再定義</td><td>DX・営業</td></tr>
+          <tr><td>DM初回送付（1,500枚）を6月末までに準備</td><td>営業</td></tr>
+          <tr><td>Web広告の一時停止・効果検証計画</td><td>マーケ</td></tr>
+          <tr><td>チラシ／ポスティング展開を6月中に準備</td><td>マーケ</td></tr>
+          <tr><td>夏向け専用ページ作成・ブログ自動生成の検討</td><td>マーケ・DX</td></tr>
+          <tr><td>AI化ロードマップ策定と責任者明確化</td><td>DX</td></tr>
+          <tr><td>次年度の組織機能設計の見直し</td><td>組織</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider">◆</div>
+
+    <h2>次の節目</h2>
+
+    <h3>次回 経営支援打ち合わせ</h3>
+    <p><strong>2026年7月22日</strong>（火）／内容：<strong>経営計画書の策定</strong> およびフィードバック</p>
+
+    <h3>下半期の運用ペース</h3>
+    <p>週次／10日単位のPDCAサイクルで進捗確認。月次よりも細かい粒度で、目標との乖離を都度修正する運用に切り替える。</p>
+
+    <div class="divider">◆</div>
+
+    <h2>編集後記</h2>
+
+    <p>1日通して印象的だったのは、<strong>「数字 → 組織 → 集客」の順で議論が進んだ</strong> こと。午前は上半期の業績と財務体質を冷静に確認し、組織の権限・意思決定プロセスの曖昧さを言語化する時間に充てられた。午後はその土台の上に立って、ダッシュボード・Web広告・DM・営業組織の具体的な打ち手を並べていく構成。順序が逆だったら、たぶん打ち手だけが空中で踊っていた気がする。</p>
+
+    <p>もう一つ、<strong>Web広告の「一度停止して検証する」決定</strong> は象徴的だった。月30万円を投入し続けてきた集客の柱を、効果検証のために一時手放す判断。代わりにDM1,500枚・アナログ配布・上流層への直接提案という、複数チャネルへの分散が並ぶ。「Web広告に頼らない集客体制」への切り替えが、ここから6月中に試される。</p>
+
+    <p>3本柱（数字を整え／組織を変え／集客を切り替える）のうち、最も時間がかかるのは「組織を変える」だろう。指揮命令系統や役割権限の明文化、次年度に向けた機能設計の見直し — どれも一回の会議では終わらない作業。次回 <strong>7月22日</strong> の経営計画書策定までに、どこまで土台が積み上がっているか。下半期の主戦場はそこに見える。</p>
+
+    <div class="note">
+      ※ 本記事は、当日のMeet録画から自動生成された議事録Docs（「260513 経営支援 午前の部」「260513 経営支援 午後の部」）を素材に、AIによる構成・編集を経て統合したものです。発言や数値は議事録の原意を保ったうえで読み物として整えています。誤字・事実誤認の可能性があります。お気づきの点があれば、発行元までご一報ください。
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <div class="colophon">Fkenzai &middot; Staff Notes &middot; Issue 06 &middot; Exec</div>
+    <p>フクシマ建材 社内通信 No.06（経営支援・1日2部構成号） / 発行：フクシマ建材株式会社 / 編集：AI秘書</p>
+    <hr>
+    <p class="source">本記事はフクシマ建材株式会社の社内・パートナー共有を主目的とした活動記録です。掲載内容には経営支援セッションにおける具体的な業績数値・営業戦略が含まれます。外部SNS等への転載はご遠慮ください。</p>
+    <p class="source" style="margin-top: 8px;">本記事はAIによる議事録の要約をベースに編集しているため、誤字や事実誤認が含まれる可能性があります。お気づきの点があれば、ぜひ発行元までご指摘ください。修正・削除のご要望も同様に承ります。</p>
+    <p class="source" style="margin-top: 8px;">出典：当日のMeet録画議事録（社内記録・午前の部／午後の部） ／ 検索エンジン除外設定（noindex, nofollow）</p>
+  </div>
+</footer>
+
+</body>
+</html>
